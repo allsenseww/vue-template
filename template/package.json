@@ -32,12 +32,17 @@
     "as-ui": "^1.1.25"
   },
   "devDependencies": {
+
+    "sass-loader": "7.0.1",
+    "node-sass": "4.8.3",
+    "url-loader": "0.5.9",
+
     "babel-eslint": "7.2.3",
-    "eslint": "4.15.0",
-    "eslint-friendly-formatter": "3.0.0",
-    "eslint-loader": "1.7.1",
-    "eslint-plugin-vue": "4.0.0",
-    "eslint-plugin-html": "3.0.0",
+    "eslint": "4.19.0",
+    "eslint-friendly-formatter": "4.0.0",
+    "eslint-loader": "2.0.0",
+    "eslint-plugin-vue": "4.0.3",
+    "eslint-plugin-html": "4.5.0",
 
     {{#if_eq runner "jest"}}
     "babel-jest": "^21.0.2",
@@ -67,14 +72,6 @@
     "babel-plugin-istanbul": "^4.1.1",
     "phantomjs-prebuilt": "^2.1.14",
     {{/if_eq}}
-
-    {{#e2e}}
-    "babel-register": "^6.22.0",
-    "chromedriver": "^2.27.2",
-    "cross-spawn": "^5.0.1",
-    "nightwatch": "^0.9.12",
-    "selenium-server": "^3.0.1",
-    {{/e2e}}
 
     "autoprefixer": "7.1.2",
     "babel-core": "6.22.1",
